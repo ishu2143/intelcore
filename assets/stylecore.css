@@ -1,0 +1,850 @@
+*{
+    padding-right: 2px;
+    margin: 0px;
+    
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Playfair Display', serif;
+    background-color: black;
+    color: white;
+    
+}
+.navbar{
+    position:sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    z-index: 9999;
+}
+
+.navbar__brand{
+    width:100px;
+}
+
+.brand__logo{
+    width: 150px;
+    margin-left: -25px;
+    
+}
+
+.navbar__nav__items {
+    display: flex;
+}
+.Heading {
+    display: none;
+}
+
+.Button {
+    background-image: linear-gradient(to right, black 0%, silver 50%,  black 100%);
+    margin:3px;
+    padding: 6px 6px;
+    text-align: center;
+    transition: 1s;
+    right: 10rem;
+    color: black;
+    font-weight: 600;
+    box-shadow: 0 0 5px hsla(0, 0%, 93%, 0.281);
+}
+
+.Button:hover {
+    transition: 1s;
+    background-image: linear-gradient(to right, silver 0%,  rgba(128, 128, 128, 0.137) 75%,  silver 100%);
+    
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.maincss {
+    position: relative;
+    width: 100%;
+} 
+
+.centered {
+    position: absolute;
+    top: 48%;
+    left: 43%;
+    transform: translate(-25%, -50%);
+    font-family: 'Redressed', cursive;
+    text-align: center;
+    color: rgb(224, 214, 214);
+  }
+.wallpaper {
+      left:20px;
+      width: 127%;
+      height:530px;
+      
+      
+  }
+.Hero__Dress {
+    position:absolute;
+    width: 140px;
+    height: 155x;
+    top: 350px;
+    left:310px;
+}
+.Hero_Watch {
+    position:absolute;
+    width: 125px;
+    height: 125x;
+    top: 5px;
+    left:12px;
+    
+}
+.Main__description {
+    margin:15px;
+    padding: 10px;
+    font-size: 15px;
+    line-height: 2rem;
+    transform: translate(2.5rem);
+    text-align: center;
+
+}
+
+
+
+
+.video {
+    margin-top: 3rems;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.video {
+    position: relative;
+}
+
+.video__footage::before {
+    
+    content:"";
+    top: 17px;
+    /* left: 90px;
+    right:60px; */
+    background: -webkit-linear-gradient(rgb(236, 228, 228), rgb(196, 195, 223));
+    position: absolute;
+    transform: translate(1rem,1.2rem);
+    height: 42%;
+    width: 55%;
+    z-index: -1;
+}
+.video__text {
+    margin: 2rem;
+    color: gray;
+    /* color:rgb(207, 187, 187); */
+    
+    font-size: 1.25rem;
+    font-weight: 300;
+    
+} 
+.gif {
+    display: none;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  /* max-width: 300px; */
+  position: relative;
+  margin: auto;
+  left: 30px;
+  top: 20px;
+}
+
+/* Make the images invisible by default */
+.Containers {
+    width:350px;
+  display: none;
+}
+.myimage {
+    width:350px;
+    transform: translate(1.5rem);
+}
+
+/* forward & Back buttons */
+.Back, .forward {
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  width: auto;
+  margin-top: -23px;
+  left: 20px;
+  padding: 17px;
+  color: grey;
+  font-weight: bold;
+  font-size: 19px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+}
+
+/* Place the "forward button" to the right */
+.forward {
+  left: 330px;
+  border-radius: 4px 0 0 4px;
+}
+
+/*when the user hovers,add a black background with some little opacity */
+.Back:hover, .forward:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption Info */
+/* .Info {
+  color: #e3e3e3;
+  font-size: 16px;
+  padding: 10px 14px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+} */
+
+/* Worknumbering (1/3 etc) */
+.MessageInfo {
+  color: #f2f2f3;
+  font-size: 14px;
+  padding: 10px 14px;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+/* The circles or bullets and indicators */
+.dots {
+  cursor:pointer;
+  height: 16px;
+  width: 16px;
+  margin: 0 5px;
+  transform: translate(2.5rem);
+ 
+  background-color: #acc;
+  border-radius: 50%;
+  left: 4px;
+  right: 10px;
+  bottom: 10px;
+  top: 50rem;
+ display: inline-block;
+
+  transition: background-color 0.5s ease;
+}
+
+.enable, .dots:hover {
+  background-color: #717161;
+}
+
+/* Faint animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.4s;
+  animation-name: fade;
+  animation-duration: 1.4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+.Section3 {
+    margin:10px;
+    padding: 10px;
+    font-size: 15px;
+    line-height: 2rem;
+    text-align: center;
+    transform: translate(2rem , 0.5rem);
+}
+   
+   
+.Wedding {
+  width: 350px;
+  transform: translate(2.5rem , 5px);
+  left: 10px;
+  margin: 18px;
+
+
+}   
+.Stargif
+  {
+   width: 2px;
+  }
+  .Stargif1
+  {
+    width: 2px;
+    
+  }
+  .Stargif2
+  {
+    width: 2px;
+   
+  }
+  .Stargif3
+  {
+    width: 2px;
+    
+  }
+  .watch1 {
+    width: 350px;
+    transform: translate(40px,50px);
+    
+  }
+  .watch_txt{
+    text-align: center;
+    transform: translate(30px , 40px);
+    margin: 15px;
+    color: gray;
+    font-size: medium;
+  }
+  .heels {
+    width: 350px;
+    transform: translate(55px,55px);
+  }
+  .heel_txt {
+    text-align: center;
+    transform: translate(30px , 40px);
+    margin: 40px;
+    color: gray;
+  }
+  .chain {
+    
+    width: 350px;
+    transform: translate(55px,55px);
+    
+  }
+  .chain_txt {
+    text-align: center;
+    transform: translate(30px , 40px);
+    margin: 40px;
+    color: gray;
+  }
+  .gadgets {
+    width: 350px;
+    transform: translate(55px,55px);
+  }
+  .gadgets_txt {
+    text-align: center;
+    transform: translate(30px , 40px);
+    margin: 40px;
+    color: gray;
+  }
+  
+.bag {
+  width: 350px;
+    transform: translate(55px,55px);
+}
+.bag_txt {
+  text-align: center;
+    transform: translate(30px , 40px);
+    margin: 40px;
+    color: gray;
+}
+.bed {
+  width: 350px;
+    transform: translate(55px,55px);
+}
+.bed_txt {
+  text-align: center;
+    transform: translate(30px , 40px);
+    margin: 40px;
+    color: gray;
+}
+.Collage_list_container {
+  margin-top: 3rem;
+  transform: translate(30px);
+}
+.collage_list_row1 {
+  display: flex;
+  align-items: baseline;
+}
+.collage_list_row2 {
+  margin-top: 10px;
+  display: flex;
+  align-items: baseline;
+  flex-direction: row-reverse;
+}
+.collage1, .collage3 {
+  border-radius: 5px;
+  margin:  0 5px;
+  width: 250px;
+  height: 110px;
+  
+}
+.collage2, .collage4 {
+  border-radius: 5px;
+  margin:  0 5px;
+  width: 120px;
+  height: 70px;
+  
+}
+.collage4 {
+  transform: translate(0px, -37px);
+}
+.clg_txt {
+  font-size: larger;
+  text-align: center;
+  color: grey;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+
+
+
+@media (min-width: 1200px){
+    .brand__logo{
+        width: 250px;
+        margin-left: -50px;
+        
+    }
+    .Heading {
+        display: contents;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        color: rgb(212, 200, 200)
+    }
+    
+    .maincss {
+        position: relative;
+        width: 100%;
+    } 
+    .Button {
+        padding:0.5rem 0.5rem ;
+        margin-top:-20px ;
+        margin-right:20px;
+        font-size: 1rem;
+        
+    }
+    .wallpaper {
+        width:900px;
+        margin-top: -50px;
+        margin-left: 100px;
+        height: 500px;
+    }
+    .centered {
+        position: absolute;
+        align-self: stretch;
+        top: 38%;
+        left: 40%;
+        transform: translate(-25%, -50%);
+        font-family: 'Redressed', cursive;
+        text-align: center;
+        
+    }
+    
+    .Hero__Dress {
+        position:absolute;
+        width: 170px;
+        height: 140x;
+        top: 220px;
+        left: 47rem;
+    }
+    .Hero_Watch {
+        position:absolute;
+        width: 150px;
+        height: 60x;
+        top: -10px;
+        left:120px;
+            
+    }
+    .hero__container {
+        display: flex;
+        flex-direction: row-reverse; 
+         
+    }
+    .Main__description {
+        margin:20px;
+        padding: 10px;
+        font-size: 20px;
+        line-height: 2rem;
+    
+    }
+    .Heading {
+        top:10px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+        color: rgb(214, 200, 200);
+
+    }
+    .video {
+        margin-top: 20px;
+        margin-left: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        align-items: right;
+        width: 100%;
+    }
+    .video {
+         position: relative;
+    }
+    
+    .video__footage::before {
+        background-image: linear-gradient(to right, rgb(155, 155, 236) 0%, silver 50%,  rgb(247, 242, 242) 100%);
+        content:"";
+        top: 10px;
+        /* left: 75px; */
+        transform: translate(5px);
+        position: absolute;
+        transform: translate(1rem,1rem);
+        height: 100%;
+        width: 13%;
+        z-index: -1;
+    }
+    .video__text {
+        margin: 50px;
+        padding:30px;
+        background: -webkit-linear-gradient(rgb(236, 228, 228), #333);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+    .gif {
+        top: 200px;
+        width: 50%;
+        height: 100px;
+    }
+
+    .Accessories {
+        top:20px;
+
+    }
+
+    .text-x1 {
+        top:200px;
+        
+    }
+    /* Slideshow container */
+.slideshow-container {
+    /* max-width: 300px; */
+    position: relative;
+    margin: auto;
+    left: 30px;
+    top: 20px;
+  }
+  
+  /* Make the images invisible by default */
+  .Containers {
+    width: 400px;
+    height: 400px;
+    left: 50%;
+    display: none;
+  }
+  
+  .myimage {
+    width:400px;
+    height: 400px;
+    left: 50%;
+    
+}
+  /* forward & Back buttons */
+  .Back, .forward {
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    width: auto;
+    margin-top: -23px;
+    padding: 17px;
+    color: grey;
+    font-weight: bold;
+    font-size: 19px;
+    transition: 0.4s ease;
+    border-radius: 0 5px 5px 0;
+    user-select: none;
+  }
+  
+  /* Place the "forward button" to the right */
+  .forward {
+    left: 355px;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  /*when the user hovers,add a black background with some little opacity */
+  .Back:hover, .forward:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption Info */
+  /* .Info {
+    color: #e3e3e3;
+    font-size: 16px;
+    padding: 10px 14px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+  } */
+  
+  /* Worknumbering (1/3 etc) */
+  .MessageInfo {
+    color: #f2f2f3;
+    font-size: 14px;
+    padding: 10px 14px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The circles or bullets and indicators */
+  .dots {
+    cursor:pointer;
+    height: 16px;
+    width: 16px;
+    margin: 0 5px;
+   
+    background-color: #acc;
+    border-radius: 50%;
+    left: 4px;
+    right: 10px;
+    bottom: 10px;
+    top: 50rem;
+   display: inline-block;
+  
+    transition: background-color 0.5s ease;
+  }
+  
+  .enable, .dots:hover {
+    background-color: #717161;
+  }
+  
+  /* Faint animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.4s;
+    animation-name: fade;
+    animation-duration: 1.4s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .5}
+    to {opacity: 2}
+  }
+  
+  @keyframes fade {
+    from {opacity: .5}
+    to {opacity: 2}
+  }
+  
+  .Section3 {
+    margin: 50px;
+        padding:30px;
+        left:600px;
+        justify-content: flex-end;
+        transform: translate(30rem , -25rem);
+        /* top:-100px */
+        background: -webkit-linear-gradient(rgb(236, 228, 228), #333);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+  }   
+   
+  .Wedding {
+    width: 340px;
+    transform: translate(65rem , -50rem);
+    font-size: larger;
+    
+  
+  
+  }  
+  .Stargif
+  {
+    width: 80px;
+    transform: translate(26rem , -75rem);
+  }
+  .Stargif1
+  {
+    width: 80px;
+    transform: translate(60rem , -79rem);
+  }
+  .Stargif2
+  {
+    width: 80px;
+    transform: translate(26rem , -63rem);
+  }
+  .Stargif3
+  {
+    width: 80px;
+    transform: translate(60rem , -67rem);
+  }
+  .watch1 {
+    width: 350px;
+    justify-content: center;
+    transform: translate(20px , -66rem);
+  }
+  .watch1:hover {
+     border: 5px;
+     border-radius: 15px;
+     padding: 5px;
+     background: -webkit-linear-gradient(rgb(236, 228, 228), #333);
+     
+
+  }
+
+  .heels {
+    width: 350px;
+    transform: translate(33rem,-94rem);
+  }
+  .heels:hover {
+    border: 5px;
+    border-radius: 15px;
+    padding: 5px;
+    background: -webkit-linear-gradient(rgb(236, 228, 228), #333);
+    
+
+ }
+  .heel_txt {
+    text-align: center;
+    transform: translate(27rem , -91.5rem);
+    margin: 40px;
+    color: gray;
+  }
+  .chain {
+    
+    width: 350px;
+    transform: translate(64rem, -123rem);
+    
+  }
+  .chain:hover {
+    
+    border: 5px;
+    border-radius: 15px;
+    padding: 5px;
+    background: -webkit-linear-gradient(rgb(236, 228, 228), #333);
+    
+
+ }
+  .chain_txt {
+    text-align: center;
+    transform: translate(60rem , -120.5rem);
+    margin: 40px;
+    color: gray;
+  }  
+  .watch_txt {
+    text-align: left;
+   
+    transform: translate(0px , -64rem);
+    
+   
+    color: gray;   
+  }
+    
+  .gadgets {
+    width: 350px;
+    justify-content: center;
+    transform: translate(20px , -115rem);
+  }
+  .gadgets:hover {
+     border: 5px;
+     border-radius: 15px;
+     padding: 5px;
+     background: -webkit-linear-gradient(rgb(236, 228, 228), #333);
+     
+
+  } 
+  .gadgets_txt {
+    text-align: left;
+   
+    transform: translate(0px , -116rem);
+    
+   
+    color: gray;   
+  }
+  .bag {
+    width: 330px;
+    justify-content: center;
+    transform: translate(33rem , -147rem);
+  }
+  .bag:hover {
+     border: 5px;
+     border-radius: 15px;
+     padding: 5px;
+     background: -webkit-linear-gradient(rgb(236, 228, 228), #333);
+     
+
+  } 
+  .bag_txt {
+    text-align: left;
+  
+    transform: translate(33rem , -148rem);
+    
+   
+    color: gray;   
+  }
+  .bed {
+    width: 400px;
+    height:420px;
+    justify-content: center;
+    transform: translate(61rem , -180rem);
+  }
+  .bed:hover {
+     border: 5px;
+     border-radius: 15px;
+     padding: 5px;
+     background: -webkit-linear-gradient(rgb(236, 228, 228), #333);
+     
+
+  } 
+  .bed_txt {
+    text-align: left;
+   
+    transform: translate(61rem , -181rem);
+    
+   
+    color: gray;   
+  }
+  .Collage_list_container {
+    margin-top: 3rem;
+    transform: translate(50rem, -175rem);
+  }
+  .collage1, .collage3 {
+    border-radius: 10px;
+    margin:  0 5px;
+    width: 350px;
+    height: 150px;
+    
+  }
+  .collage2, .collage4 {
+    border-radius: 10px;
+    margin:  0 5px;
+    width: 160px;
+    height: 90px;
+    
+  }
+  .collage_list_row2 {
+    margin-top: 10px;
+    display: flex;
+    align-items: baseline;
+    flex-direction: row-reverse;
+    tran
+  }
+  
+  
+  .collage4 {
+    transform: translate(20px, -65px);
+  }
+  .clg_txt {
+    font-size: larger;
+    text-align: center;
+    color: grey;
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-right: 390px;
+    margin-bottom: 50px;
+    padding-right: 330px;
+    transform: translate(0px , -190rem);
+    font-stretch:narrower;
+  }
+    
+    
+}

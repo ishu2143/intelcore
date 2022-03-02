@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Night Sky emporium</title>
+    <link rel="stylesheet" href="stylecore.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+</head> 
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar__brand">
+                <img src="C:\Users\ISHWARYA S\Desktop\demo\logo.jpg" alt="logo" class="brand__logo"/> 
+            </div>
+            <div class="Heading">
+                <h1>- - - Night &nbsp Sky &nbsp Emporium - - -</h1>
+            </div>
+            <div class="navbar__nav__items">
+                <!-- <div class="nav__items">
+                    <button class="Button">Click Here</button>
+                </div> -->
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="C:\Users\ISHWARYA S\Desktop\demo\about.html">About</a>
+                    <a href="C:\Users\ISHWARYA S\Desktop\demo\about.html">Services</a>
+                    <a href="C:\Users\ISHWARYA S\Desktop\demo\about.html">Clients</a>
+                    <a href="C:\Users\ISHWARYA S\Desktop\demo\about.html">Contact</a>
+                  </div>
+                  
+                  <!-- Use any element to open the sidenav -->
+                  <span onclick="openNav()"><img width="50px" src="C:\Users\ISHWARYA S\Desktop\demo\hamburger-menu-web-icon-white-600w-1249309132.jpg" class="Ham" /> </span>
+                  <script>
+                      function openNav() {
+                        document.getElementById("mySidenav").style.width = "250px";
+                        }
+
+                        /* Set the width of the side navigation to 0 */
+                        function closeNav() {
+                        document.getElementById("mySidenav").style.width = "0";
+                        }
+                  </script>
+                
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="hero__container">
+            <div class="maincss">
+                <div class="centered">
+                    <h2>Night Sky Emporium</h2>
+                        <br/> 
+                    <h3>Welcome to the most exclusive shopping site in Royal Black..</h3>  
+                </div>
+                <div class="hero__image">
+                    <img src="C:\Users\ISHWARYA S\Desktop\demo\wallpaper.png" alt="Wallpaper" class="wallpaper"/>
+                    <img src="C:\Users\ISHWARYA S\Desktop\demo\dress.jpg" alt="Dress" class="Hero__Dress"/>
+                    <img  src="C:\Users\ISHWARYA S\Desktop\demo\watch.jpg" alt="Watch" class="Hero_Watch"/>
+                </div>
+               
+            </div>
+            <div class="Main__description">
+                <br/>
+                <h2>Are you a Black lover?? Then you have found the correct website where you can buy your favourite products only in Royal black color</h2>                <br/>
+                <button class="Button">Order Now</button>
+            </div>
+
+            
+
+        </section>
+        <section class="video">
+            <div class="video__footage">
+                <iframe class="blacktheme" width="190" height="400" src="https://www.youtube.com/embed/ZioZxQbkcUE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video__text">
+                <br/>
+                <p>You can have any colour as long as it is black. One is never over or under dressed with a little black dressed.</p>
+                <br/>
+               
+                <br/>
+                <!-- <p>♥ ♥ ♥</p> -->
+            </div>
+           <div class="gif">
+               <img src="C:\Users\ISHWARYA S\Desktop\demo\0_3IFEy-hfoIpgFjBl.gif" alt="gif">
+           </div>
+        </section>
+        <section class="Accessories">
+            <h1 class="text-x1"><br/>Explore our Booklet</h1>
+            <div class="slideshow-container fade">
+
+                <!-- Full images with numbers and message Info -->
+                <div class="Containers">
+                  <div class="MessageInfo">1 / 3</div>
+                  <img src="C:\Users\ISHWARYA S\Desktop\demo\img1.jpg" class="myimage" >
+                  
+                </div>
+              
+                <div class="Containers">
+                  <div class="MessageInfo">2 / 3</div>
+                  <img src="C:\Users\ISHWARYA S\Desktop\demo\img2.png"class="myimage" >
+                  
+                </div>
+              
+                <div class="Containers">
+                  <div class="MessageInfo">3 / 3</div>
+                  <img src="C:\Users\ISHWARYA S\Desktop\demo\img3.jpg"class="myimage" >
+                  
+                </div>
+              
+                <!-- Back and forward buttons -->
+                <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              
+              <!-- The circles/dots -->
+              <div style="text-align:center">
+                <span class="dots" onclick="currentSlide(1)"></span>
+                <span class="dots" onclick="currentSlide(2)"></span>
+                <span class="dots" onclick="currentSlide(3)"></span>
+              </div> 
+              <script>
+                var slidePosition = 1;
+        SlideShow(slidePosition);
+        
+        // forward/Back controls
+        function plusSlides(n) {
+          SlideShow(slidePosition += n);
+        }
+        
+        //  images controls
+        function currentSlide(n) {
+          SlideShow(slidePosition = n);
+        }
+        
+        function SlideShow(n) {
+          var i;
+          var slides = document.getElementsByClassName("Containers");
+          var circles = document.getElementsByClassName("dots");
+          if (n > slides.length) {slidePosition = 1}
+          if (n < 1) {slidePosition = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < circles.length; i++) {
+              circles[i].className = circles[i].className.replace(" enable", "");
+          }
+          slides[slidePosition-1].style.display = "block";
+          circles[slidePosition-1].className += " enable";
+        } 
+              </script>
+        </section>
+            
+        <div class="Section3">
+            <br/>
+            <h2>Royal Wedding colletion!!<br/>Available in all sizes</h2>
+            <h3>♥ ♥ Exclusive offers.. Latest fashion Trends!!<br>Give your loved one the gift of choice ♥ ♥</h3>  
+            <br/>
+            <h2>Starting form Rs 50,000</h2>              
+             
+        </div>   
+        <img src="C:\Users\ISHWARYA S\Desktop\demo\img5.jpg" alt="wedding" class="Wedding"/>
+        <img src="C:\Users\ISHWARYA S\Desktop\demo\stargif.gif" alt="gif" class="Stargif"/>
+        <img src="C:\Users\ISHWARYA S\Desktop\demo\stargif.gif" alt="gif" class="Stargif1"/>
+        <img src="C:\Users\ISHWARYA S\Desktop\demo\stargif.gif" alt="gif" class="Stargif2"/>
+        <img src="C:\Users\ISHWARYA S\Desktop\demo\stargif.gif" alt="gif" class="Stargif3"/>
+        
+        
+        <section class="section4">
+            <div class="section_photos">
+                <img src="C:\Users\ISHWARYA S\Desktop\demo\watch1.jpg" class="watch1">
+                <div class="watch_txt">
+                    <p>Audemars Piguet Unveils the Royal Oak in Black Ceramic</p> 
+                    <h2>♢ INR 10,000 onwards ♢</h2>
+                </div>
+                
+            </div>
+            <div class="section_photos">
+                <img src="C:\Users\ISHWARYA S\Desktop\demo\heels.jpg" class="heels">
+            
+                <div class="heel_txt">
+                    <p>Royal Craft Women Black Heels Sandal</p> 
+                    <h2>♢ INR 700 onwards ♢</h2>
+                </div>
+            </div>
+            <div class="section_photos">
+                <img src="C:\Users\ISHWARYA S\Desktop\demo\accessories.png" class="chain">
+            
+                <div class="chain_txt">
+                    <p>Latest Neck Chain Designs for Women</p> 
+                    <h2>♢ INR 200 onwards ♢</h2>
+                </div>
+            </div>
+            <div class="section_photos">
+                <img src="C:\Users\ISHWARYA S\Desktop\demo\gadgets.jpg" class="gadgets">
+            
+                <div class="gadgets_txt">
+                    <h3>♢ All black themed gadgets ♢</h3> 
+                    
+                </div>
+            </div>
+            <div class="section_photos">
+                <img src="C:\Users\ISHWARYA S\Desktop\demo\handbag.jpg" class="bag">
+            
+                <div class="bag_txt">
+                    <p>Royal touch Waterproof Shoulder Bag</p> 
+                    <h2>♢ INR 500 onwards ♢</h2>
+                </div>
+            </div>
+            <div class="section_photos">
+                <img src="C:\Users\ISHWARYA S\Desktop\demo\Bedroom.jpg" class="bed">
+            
+                <div class="bed_txt">
+                    <h3>Black themed interior designing</h3> 
+                    <p>♢ Decorate ur room in a royal way ♢</p>
+                </div>
+            </div>
+        </section>
+        <section class="Collage_list_container">
+            <div class="collage_list_row1">
+                <img src="C:\Users\ISHWARYA S\Desktop\demo\collage1.jpg" alt="clg1" class="collage1"/>
+                <img src="C:\Users\ISHWARYA S\Desktop\demo\collage2.jpg" alt="clg2" class="collage2"/>
+            </div>
+            <div class="collage_list_row2">
+                <img src="C:\Users\ISHWARYA S\Desktop\demo\collage3.jpg" alt="clg3" class="collage3"/>
+                <img src="C:\Users\ISHWARYA S\Desktop\demo\collage4.jpg" alt="clg4" class="collage4"/>
+
+            </div>
+           
+        </section>
+        <div class="clg_txt">
+            <p>** Be the change!! Dress yourself like u want to ,with the royal black.. Order all your favourite dresses ,sandles ,accessories, watches and much more in royal black color only in Night Sky Emporiun.**</p>
+        </div>
+        <br/>
+        <h2 class="maptxt" color="grey" ;>Visit Us: </h2>
+        
+        <div class="googleMap"></div>
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.8778710827546!2d78.6859854147188!3d10.820657192291531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaf59a66475551%3A0xb7c17e13cd90579b!2sMax!5e0!3m2!1sen!2sin!4v1645883364979!5m2!1sen!2sin" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" class="gg"></iframe>
+        <p class="maptxt2" color: rgb(248, 242, 242);>Royal black Emporium, Star Avenue,<br/>T.Nagar B-Cross, Trichy-8. </p>
+        <script>
+        function myMap() {
+        var mapProp= {
+        center:new google.maps.LatLng(51.508742,-0.120850),
+        zoom:5,
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+        </script>
+        <div class="pc">
+            <a class="broucher" style="font-size: larger; margin-left: 50px; " href="C:\Users\ISHWARYA S\Desktop\demo\broucher.pdf">Download our broucher</a></br>
+            <a class="broucher" style="font-size: larger; margin-left: 50px;" href="https://www.privacypolicies.com/blog/sample-terms-conditions-template/">Terms and conditions</a>
+
+        </div>
+        <div class="links">
+            <br/><br/><br/><br/><br/>
+            <h3 style="color: grey;">To know more about us follow us on :</h3>
+            <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+                    <a href="https://www.instagram.com/" target="_blank"><img class="insta" src="C:\Users\ISHWARYA S\Desktop\demo\instagram.jpg"/> </a>
+                    <a href="https://www.facebook.com/" target="_blank"><img class="fb" src="C:\Users\ISHWARYA S\Desktop\demo\fb.jpg"/></a>
+                    <a href="https://www.twitter.com/" target="_blank"><img class="fb" src="C:\Users\ISHWARYA S\Desktop\demo\twitter.jpg"></a>
+                    <a href="#"></a>
+        </div>
+        <h2 style="color: grey; margin-top: 10px; transform: translate(0px,-175rem);">***</h2> 
+    </main>
+    
+</body>
+</html>
